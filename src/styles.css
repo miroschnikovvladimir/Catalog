@@ -76,17 +76,21 @@ h2 { letter-spacing: -.025em; }
 
 .module-card { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); }
 .module-open { display: grid; grid-template-columns: minmax(135px, 32%) 1fr; width: 100%; min-height: 220px; padding: 0; border: 0; color: inherit; text-align: left; background: transparent; }
+.module-open.without-image { grid-template-columns: 1fr; min-height: 0; }
+.module-open.without-image .module-copy { min-height: 150px; padding-right: 76px; }
 .module-image { height: 100%; min-height: 220px; }
 .module-copy { display: flex; flex-direction: column; justify-content: center; padding: 24px; }
 .module-copy strong { font-family: Georgia, "Times New Roman", serif; font-size: 27px; line-height: 1.1; }
 .module-copy > span:last-child { margin-top: 10px; color: var(--muted); line-height: 1.5; }
 .module-card > .heart { position: absolute; right: 14px; bottom: 14px; }
 .character-grid .module-open { display: flex; flex-direction: column; }
+.character-grid .module-open.without-image { display: grid; grid-template-columns: 1fr; }
 .character-grid .module-image { aspect-ratio: 4 / 3; min-height: 0; }
 .character-grid .module-copy { min-height: 190px; justify-content: flex-start; padding-bottom: 70px; }
 
 .dialog-backdrop { position: fixed; z-index: 50; inset: 0; display: grid; place-items: center; padding: 18px; background: rgb(7 4 11 / 78%); backdrop-filter: blur(8px); }
 .dialog { position: relative; display: grid; grid-template-columns: minmax(220px, 42%) 1fr; overflow: hidden; width: min(820px, 100%); max-height: min(760px, 92vh); border: 1px solid var(--line); border-radius: 28px; background: var(--panel); box-shadow: 0 30px 90px #000; }
+.dialog.without-image { grid-template-columns: 1fr; width: min(620px, 100%); }
 .dialog-image { height: 100%; min-height: 500px; }
 .dialog-copy { overflow-y: auto; padding: clamp(28px, 5vw, 52px); }
 .dialog-copy h2 { margin: 0; font-size: clamp(34px, 5vw, 50px); line-height: 1; }
@@ -122,15 +126,16 @@ h2 { letter-spacing: -.025em; }
   .filters { grid-column: auto; }
   .story-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 12px; }
   .story-hero { grid-template-columns: 1fr; }
-  .story-cover { max-height: 65vh; }
+  .story-cover { width: min(62vw, 250px); max-height: none; margin-inline: auto; border-radius: 20px; }
   .character-grid { grid-template-columns: 1fr; }
-  .module-open { grid-template-columns: 38% 1fr; min-height: 190px; }
-  .module-image { min-height: 190px; }
-  .character-grid .module-open { display: grid; grid-template-columns: 38% 1fr; }
+  .module-open { grid-template-columns: 34% 1fr; min-height: 144px; }
+  .module-image { min-height: 144px; }
+  .character-grid .module-open { display: grid; grid-template-columns: 34% 1fr; }
+  .character-grid .module-open.without-image { grid-template-columns: 1fr; }
   .character-grid .module-image { height: 100%; aspect-ratio: auto; }
-  .character-grid .module-copy { min-height: 190px; }
+  .character-grid .module-copy { min-height: 144px; }
   .dialog { display: block; overflow-y: auto; }
-  .dialog-image { height: min(42vh, 360px); min-height: 0; }
+  .dialog-image { height: min(28vh, 220px); min-height: 0; }
   .dialog-copy { overflow: visible; }
 }
 

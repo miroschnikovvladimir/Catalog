@@ -92,9 +92,9 @@ function ModuleDialog({ module, close, favorite, toggle }: {
   }, [close]);
   return (
     <div className="dialog-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
-      <article className="dialog" role="dialog" aria-modal="true" aria-labelledby="module-dialog-title">
+      <article className={`dialog ${module.image ? "" : "without-image"}`} role="dialog" aria-modal="true" aria-labelledby="module-dialog-title">
         <button className="dialog-close" type="button" onClick={close} aria-label="Закрыть">×</button>
-        <CatalogPicture image={module.image} className="dialog-image" />
+        {module.image && <CatalogPicture image={module.image} className="dialog-image" />}
         <div className="dialog-copy">
           <p className="eyebrow">{typeLabels[module.type]}</p>
           <h2 id="module-dialog-title">{module.title}</h2>
@@ -114,8 +114,8 @@ function ModuleCard({ module, favorite, toggle, open }: {
 }) {
   return (
     <article className="module-card">
-      <button type="button" className="module-open" onClick={() => open(module)}>
-        <CatalogPicture image={module.image} className="module-image" />
+      <button type="button" className={`module-open ${module.image ? "" : "without-image"}`} onClick={() => open(module)}>
+        {module.image && <CatalogPicture image={module.image} className="module-image" />}
         <span className="module-copy">
           <span className="eyebrow">{typeLabels[module.type]}</span>
           <strong>{module.title}</strong>
