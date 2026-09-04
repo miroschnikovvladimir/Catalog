@@ -33,7 +33,7 @@ jobs:
       - run: pnpm test
       - run: pnpm build
         env:
-          VITE_CATALOG_API_URL: ${{ vars.CATALOG_API_URL }}
+          VITE_CATALOG_API_URL: https://storyteller-catalog-api.storyteller-catalog.workers.dev
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
