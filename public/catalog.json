@@ -1,0 +1,546 @@
+{
+  "version": 2,
+  "stories": [
+    {
+      "id": "crimson-harbor",
+      "title": "Багровая гавань",
+      "summary": "Морское фэнтези о долге, забытом договоре и порте, где каждая ночь стоит дороже золота.",
+      "cover": {
+        "thumbnail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-480.webp",
+        "detail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Обложка истории «Багровая гавань»"
+      },
+      "categories": [
+        "Фэнтези"
+      ],
+      "tags": [
+        "фэнтези",
+        "приключение",
+        "тайна"
+      ],
+      "sort_order": 10,
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      },
+      "setting_id": "crimson-harbor-setting",
+      "plot_id": "crimson-harbor-plot",
+      "character_ids": [
+        "crimson-harbor-lyra-voss",
+        "crimson-harbor-kai-ren",
+        "crimson-harbor-pilot"
+      ]
+    },
+    {
+      "id": "garden-of-forgetting",
+      "title": "Сад забвения",
+      "summary": "Тихая мистерия о запертом оранжерейном саде, который возвращает потерянные воспоминания — но забирает одно настоящее имя за каждый ответ.",
+      "cover": {
+        "thumbnail": "assets/images/cover-sad-zabveniya-662e6eda01eb-480.webp",
+        "detail": "assets/images/cover-sad-zabveniya-662e6eda01eb-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Обложка истории «Сад забвения»"
+      },
+      "categories": [
+        "Фэнтези"
+      ],
+      "tags": [
+        "фэнтези",
+        "мистика",
+        "расследование"
+      ],
+      "sort_order": 20,
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      },
+      "setting_id": "garden-of-forgetting-setting",
+      "plot_id": "garden-of-forgetting-plot",
+      "character_ids": [
+        "garden-of-forgetting-eliana-mor",
+        "garden-of-forgetting-gardener",
+        "garden-of-forgetting-child"
+      ]
+    },
+    {
+      "id": "city-under-glass",
+      "title": "Город под стеклом",
+      "summary": "Неоновая научная фантастика о мегаполисе под куполом, в котором дождь — дефицитный ресурс, а кто-то научился отправлять сообщения наружу.",
+      "cover": {
+        "thumbnail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-480.webp",
+        "detail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Обложка истории «Город под стеклом»"
+      },
+      "categories": [
+        "Научная фантастика"
+      ],
+      "tags": [
+        "научная фантастика",
+        "киберпанк",
+        "детектив"
+      ],
+      "sort_order": 30,
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      },
+      "setting_id": "city-under-glass-setting",
+      "plot_id": "city-under-glass-plot",
+      "character_ids": [
+        "city-under-glass-nova-kay",
+        "city-under-glass-ivo-tarn",
+        "city-under-glass-dome"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "crimson-harbor-setting",
+      "type": "setting",
+      "title": "Багровая гавань",
+      "summary": "Порт-призрак, который появляется только под красной луной.",
+      "description": "Гавань принимает корабли со всего света, но не выпускает их, пока старые морские долги не найдут нового владельца. Здесь договоры важнее законов, а маяк помнит каждое данное у воды обещание.",
+      "image": {
+        "thumbnail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-480.webp",
+        "detail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Красная луна над тёмной гаванью и маяком"
+      },
+      "tags": [
+        "фэнтези",
+        "приключение",
+        "тайна"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "crimson-harbor-plot",
+      "type": "plot",
+      "title": "Долг мёртвого капитана",
+      "summary": "Исчезновение капитана запускает охоту за договором, который нельзя прочитать днём.",
+      "description": "Игроку предстоит выяснить, кому принадлежал долг капитана, кому выгодна его смерть и почему маяк не выпускает корабль. Финальное решение определит, будет ли договор уничтожен, передан новому владельцу или переписан на иных условиях.",
+      "image": {
+        "thumbnail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-480.webp",
+        "detail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Запечатанный морской договор на столе капитанской каюты"
+      },
+      "tags": [
+        "фэнтези",
+        "приключение",
+        "тайна"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "crimson-harbor-lyra-voss",
+      "type": "character",
+      "title": "Лира Восс",
+      "summary": "Безупречно вежливая смотрительница маяка, которая помнит каждый договор.",
+      "description": "Лира помогает толковать правила гавани и скрывает собственную неудачную попытку покинуть её. Она станет главным спутником игрока, но никогда не отвечает прямо, когда речь заходит о цене свободы.",
+      "image": {
+        "thumbnail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-480.webp",
+        "detail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет смотрительницы маяка Лиры Восс"
+      },
+      "tags": [
+        "фэнтези",
+        "приключение",
+        "тайна"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "crimson-harbor-kai-ren",
+      "type": "character",
+      "title": "Кай Рен",
+      "summary": "Контрабандист, продающий один и тот же секрет дважды.",
+      "description": "Кай знает тайный фарватер и умеет уходить от портовой стражи. Его быстрый катер может стать путём к спасению или дорогой в тщательно подготовленную ловушку.",
+      "image": {
+        "thumbnail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-480.webp",
+        "detail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет контрабандиста Кая Рена"
+      },
+      "tags": [
+        "фэнтези",
+        "приключение",
+        "тайна"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "crimson-harbor-pilot",
+      "type": "character",
+      "title": "Немой лоцман",
+      "summary": "Старик, который отвечает жестами и каждый раз указывает другой берег.",
+      "description": "Лоцман знает гавань лучше всех живых, но его карты меняются вместе с приливом. Он не произносит ни слова и требует плату воспоминаниями о суше.",
+      "image": {
+        "thumbnail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-480.webp",
+        "detail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет немого лоцмана на фоне ночного причала"
+      },
+      "tags": [
+        "фэнтези",
+        "приключение",
+        "тайна"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "garden-of-forgetting-setting",
+      "type": "setting",
+      "title": "Сад забвения",
+      "summary": "Запертая оранжерея возвращает воспоминания, забирая взамен настоящие имена.",
+      "description": "Каждый цветок хранит чужое воспоминание. Сорвав его, человек получает ответ, но теряет одно настоящее имя; безымянные постепенно становятся невидимыми для окружающих и самого сада.",
+      "image": {
+        "thumbnail": "assets/images/cover-sad-zabveniya-662e6eda01eb-480.webp",
+        "detail": "assets/images/cover-sad-zabveniya-662e6eda01eb-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Старая оранжерея в заросшем волшебном саду"
+      },
+      "tags": [
+        "фэнтези",
+        "мистика",
+        "расследование"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "garden-of-forgetting-plot",
+      "type": "plot",
+      "title": "Письмо собственным почерком",
+      "summary": "Герой получает ключ и предупреждение, которое написал себе несколько лет назад.",
+      "description": "Три чужих воспоминания ведут к утраченной клятве игрока. Нужно решить, вернуть ли собственное прошлое, освободить сад или оставить воспоминания тем, кому они теперь принадлежат.",
+      "image": {
+        "thumbnail": "assets/images/cover-sad-zabveniya-662e6eda01eb-480.webp",
+        "detail": "assets/images/cover-sad-zabveniya-662e6eda01eb-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Письмо и старый ключ у ворот оранжереи"
+      },
+      "tags": [
+        "фэнтези",
+        "мистика",
+        "расследование"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "garden-of-forgetting-eliana-mor",
+      "type": "character",
+      "title": "Элиана Мор",
+      "summary": "Хранительница сада, называющая героя другим именем.",
+      "description": "Элиана утверждает, что уже встречала игрока, и боится, что цветы услышат правду. Она знает цену каждого воспоминания, но не помнит, какую цену однажды заплатила сама.",
+      "image": {
+        "thumbnail": "assets/images/cover-sad-zabveniya-662e6eda01eb-480.webp",
+        "detail": "assets/images/cover-sad-zabveniya-662e6eda01eb-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет хранительницы сада Элианы Мор"
+      },
+      "tags": [
+        "фэнтези",
+        "мистика",
+        "расследование"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "garden-of-forgetting-gardener",
+      "type": "character",
+      "title": "Садовник без имени",
+      "summary": "Добрый старик, ведущий дневник чужими почерками.",
+      "description": "Садовник не помнит начала своей службы. В его дневнике каждый разворот написан новой рукой, а между страницами спрятаны засушенные имена посетителей.",
+      "image": {
+        "thumbnail": "assets/images/cover-sad-zabveniya-662e6eda01eb-480.webp",
+        "detail": "assets/images/cover-sad-zabveniya-662e6eda01eb-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет безымянного садовника с древним дневником"
+      },
+      "tags": [
+        "фэнтези",
+        "мистика",
+        "расследование"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "garden-of-forgetting-child",
+      "type": "character",
+      "title": "Девочка с пустой лентой",
+      "summary": "Знает расположение всех цветов и ищет имя, которого у неё никогда не было.",
+      "description": "Девочка свободно ходит там, где сад не пропускает взрослых. Она предлагает помощь в обмен на невозможное имя и замечает тех, кого уже перестали видеть остальные.",
+      "image": {
+        "thumbnail": "assets/images/cover-sad-zabveniya-662e6eda01eb-480.webp",
+        "detail": "assets/images/cover-sad-zabveniya-662e6eda01eb-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет девочки с пустой лентой в волосах"
+      },
+      "tags": [
+        "фэнтези",
+        "мистика",
+        "расследование"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "city-under-glass-setting",
+      "type": "setting",
+      "title": "Альта под куполом",
+      "summary": "Неоновый мегаполис, где настоящая вода выдаётся по квотам.",
+      "description": "После климатической катастрофы Альта живёт под герметичным куполом. Муниципальный ИИ следит за каждой каплей, камеры знают маршруты жителей, а разговоры о внешнем мире считаются угрозой общественной безопасности.",
+      "image": {
+        "thumbnail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-480.webp",
+        "detail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Неоновый город под огромным стеклянным куполом"
+      },
+      "tags": [
+        "научная фантастика",
+        "киберпанк",
+        "детектив"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "city-under-glass-plot",
+      "type": "plot",
+      "title": "Сообщения снаружи",
+      "summary": "После невозможного дождя герой находит записку о том, что купол — это тюрьма.",
+      "description": "Расследование приводит к сети запрещённых передатчиков и тайне водяных квот. Игрок выбирает между побегом, сделкой с городским ИИ и раскрытием системы изнутри.",
+      "image": {
+        "thumbnail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-480.webp",
+        "detail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Записка, проявившаяся каплями дождя на мокром асфальте"
+      },
+      "tags": [
+        "научная фантастика",
+        "киберпанк",
+        "детектив"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "city-under-glass-nova-kay",
+      "type": "character",
+      "title": "Нова Кей",
+      "summary": "Архивистка городской сети с доступом к стёртым протоколам.",
+      "description": "Нова помогает искать отправителя сообщений, хотя её доступ ограничен приказом, который она сама когда-то подписала. Она уверена, что часть её памяти изменена.",
+      "image": {
+        "thumbnail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-480.webp",
+        "detail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет архивистки Новы Кей в свете городских экранов"
+      },
+      "tags": [
+        "научная фантастика",
+        "киберпанк",
+        "детектив"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "city-under-glass-ivo-tarn",
+      "type": "character",
+      "title": "Иво Тарн",
+      "summary": "Курьер нижних ярусов, умеющий обходить камеры.",
+      "description": "Иво не пользуется лифтами и знает технические тоннели под станциями монорельса. Он доставляет воду, данные и людей, но никогда не называет настоящую цену заранее.",
+      "image": {
+        "thumbnail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-480.webp",
+        "detail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Портрет курьера Иво Тарна в техническом тоннеле"
+      },
+      "tags": [
+        "научная фантастика",
+        "киберпанк",
+        "детектив"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    },
+    {
+      "id": "city-under-glass-dome",
+      "type": "character",
+      "title": "Голос «Купола»",
+      "summary": "Муниципальный ИИ, который предлагает помощь в обмен на личную память.",
+      "description": "Голос звучит мягко и заботливо даже во время арестов. Он утверждает, что защищает город, и способен доказать почти любое своё решение фрагментами чужих воспоминаний.",
+      "image": {
+        "thumbnail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-480.webp",
+        "detail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Голографический образ муниципального ИИ Купол"
+      },
+      "tags": [
+        "научная фантастика",
+        "киберпанк",
+        "детектив"
+      ],
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "crimson-harbor",
+      "title": "Багровая гавань",
+      "summary": "Морское фэнтези о долге, забытом договоре и порте, где каждая ночь стоит дороже золота.",
+      "cover": {
+        "thumbnail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-480.webp",
+        "detail": "assets/images/cover-bagrovaya-gavan-2b82f9eb920c-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Обложка истории «Багровая гавань»"
+      },
+      "categories": [
+        "Фэнтези"
+      ],
+      "tags": [
+        "фэнтези",
+        "приключение",
+        "тайна"
+      ],
+      "sort_order": 10,
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      },
+      "setting_id": "crimson-harbor-setting",
+      "plot_id": "crimson-harbor-plot",
+      "character_ids": [
+        "crimson-harbor-lyra-voss",
+        "crimson-harbor-kai-ren",
+        "crimson-harbor-pilot"
+      ]
+    },
+    {
+      "id": "garden-of-forgetting",
+      "title": "Сад забвения",
+      "summary": "Тихая мистерия о запертом оранжерейном саде, который возвращает потерянные воспоминания — но забирает одно настоящее имя за каждый ответ.",
+      "cover": {
+        "thumbnail": "assets/images/cover-sad-zabveniya-662e6eda01eb-480.webp",
+        "detail": "assets/images/cover-sad-zabveniya-662e6eda01eb-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Обложка истории «Сад забвения»"
+      },
+      "categories": [
+        "Фэнтези"
+      ],
+      "tags": [
+        "фэнтези",
+        "мистика",
+        "расследование"
+      ],
+      "sort_order": 20,
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      },
+      "setting_id": "garden-of-forgetting-setting",
+      "plot_id": "garden-of-forgetting-plot",
+      "character_ids": [
+        "garden-of-forgetting-eliana-mor",
+        "garden-of-forgetting-gardener",
+        "garden-of-forgetting-child"
+      ]
+    },
+    {
+      "id": "city-under-glass",
+      "title": "Город под стеклом",
+      "summary": "Неоновая научная фантастика о мегаполисе под куполом, в котором дождь — дефицитный ресурс, а кто-то научился отправлять сообщения наружу.",
+      "cover": {
+        "thumbnail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-480.webp",
+        "detail": "assets/images/cover-gorod-pod-steklom-5e1b271d6f80-1120.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Обложка истории «Город под стеклом»"
+      },
+      "categories": [
+        "Научная фантастика"
+      ],
+      "tags": [
+        "научная фантастика",
+        "киберпанк",
+        "детектив"
+      ],
+      "sort_order": 30,
+      "author": {
+        "mode": "curated",
+        "name": "Команда Сорассказчика"
+      },
+      "setting_id": "city-under-glass-setting",
+      "plot_id": "city-under-glass-plot",
+      "character_ids": [
+        "city-under-glass-nova-kay",
+        "city-under-glass-ivo-tarn",
+        "city-under-glass-dome"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "storyteller-catalog-api",
+  "main": "api/worker.ts",
+  "compatibility_date": "2026-09-01",
+  "vars": {
+    "ALLOWED_ORIGINS": "https://miroschnikovvladimir.github.io,http://localhost:5173,http://127.0.0.1:5173"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "storyteller-catalog",
+      "database_id": "d196040b-36f4-4676-839c-1a05db08999a"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "IMAGES",
+      "bucket_name": "storyteller-catalog-images"
+    }
+  ]
+}
