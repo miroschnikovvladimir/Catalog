@@ -12,6 +12,7 @@ type Route =
 
 const EMPTY: CatalogData = { version: 2, stories: [], modules: [] };
 const FAVORITES_KEY = "storyteller-catalog-favorites-v2";
+const BUILD_SHA = (import.meta.env.VITE_BUILD_SHA || "dev").slice(0, 7);
 const typeLabels: Record<ModuleType, string> = {
   setting: "Сеттинг",
   plot: "Сюжет",
@@ -363,7 +364,7 @@ export function App() {
   const module = route.page === "module" ? data.modules.find((item) => item.id === route.id) : undefined;
   return (
     <div className="app-shell">
-      <header className="topbar"><a className="brand" href="#/">С<span>о</span>рассказчик</a><nav aria-label="Основное меню"><a href="#/favorites">Сохранённое</a><a href="#/builder">Конструктор</a><a href="#/submit">Предложить</a></nav></header>
+      <header className="topbar"><div className="brand-line"><a className="brand" href="#/">С<span>о</span>рассказчик</a><small className="build-stamp" title="Версия опубликованной сборки">{BUILD_SHA}</small></div><nav aria-label="Основное меню"><a href="#/favorites">Сохранённое</a><a href="#/builder">Конструктор</a><a href="#/submit">Предложить</a></nav></header>
       {loading && <main className="content-page"><div className="loading-card">Загружаю миры…</div></main>}
       {error && <main className="content-page"><div className="empty"><h1>Каталог не загрузился</h1><p>{error}</p></div></main>}
       {!loading && !error && route.page === "catalog" && <CatalogHome data={data} favorites={favorites} toggle={toggle} />}
