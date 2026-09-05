@@ -83,6 +83,22 @@ function Heart({ id, active, count, toggle, disabled }: {
   );
 }
 
+function PlayButton({ storyId, className = "" }: { storyId: string; className?: string }) {
+  const telegram = window.Telegram?.WebApp;
+  const play = () => telegram?.sendData(JSON.stringify({ action: "import", story_id: storyId }));
+  return (
+    <button
+      className={`primary-action ${className}`.trim()}
+      type="button"
+      onClick={play}
+      disabled={!telegram?.sendData}
+      title={telegram?.sendData ? "Передать историю боту" : "Открой каталог внутри Telegram"}
+    >
+      Играть
+    </button>
+  );
+}
+
 function ModuleDialog({ module, close, favorite, toggle }: {
   module: StoryModule; close: () => void; favorite: boolean; toggle: (id: string) => void;
 }) {
@@ -136,8 +152,6 @@ function StoryDetail({ story, data, favorites, toggle }: {
   const plot = modules.get(story.plot_id);
   const characters = story.character_ids.map((id) => modules.get(id)).filter(Boolean) as StoryModule[];
   const [opened, setOpened] = useState<StoryModule | null>(null);
-  const telegram = window.Telegram?.WebApp;
-  const importStory = () => telegram?.sendData(JSON.stringify({ action: "import", story_id: story.id }));
   return (
     <main className="detail-page">
       <a className="back-link" href="#/">← Каталог</a>
@@ -151,9 +165,7 @@ function StoryDetail({ story, data, favorites, toggle }: {
           <div className="chips">{story.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
           <div className="hero-actions">
             <Heart id={story.id} active={favorites.has(story.id)} count={story.likes} toggle={toggle} />
-            <button className="primary-action" type="button" onClick={importStory} disabled={!telegram?.sendData}>
-              {telegram?.sendData ? "Играть эту историю" : "Открой в Telegram"}
-            </button>
+            <PlayButton storyId={story.id} />
           </div>
         </div>
       </section>
@@ -190,13 +202,18 @@ function CatalogHome({ data, favorites, toggle }: { data: CatalogData; favorites
       </section>
       <section className="story-grid" aria-live="polite">
         {stories.map((story, index) => (
-          <a className="story-card" href={`#/stories/${story.id}`} key={story.id}>
+          <article className="story-card" key={story.id}>
             <div className="cover-wrap">
-              <CatalogPicture image={story.cover} className="cover-card" priority={index < 2} />
+              <a href={`#/stories/${story.id}`} aria-label={`Открыть историю «${story.title}»`}>
+                <CatalogPicture image={story.cover} className="cover-card" priority={index < 2} />
+              </a>
               <Heart id={story.id} active={favorites.has(story.id)} count={story.likes} toggle={toggle} />
             </div>
-            <p>{story.categories[0]}</p><h2>{story.title}</h2><span>{story.summary}</span>
-          </a>
+            <a className="story-card-copy" href={`#/stories/${story.id}`}>
+              <p>{story.categories[0]}</p><h2>{story.title}</h2><span>{story.summary}</span>
+            </a>
+            <PlayButton storyId={story.id} className="card-play" />
+          </article>
         ))}
         {!stories.length && <div className="empty"><h2>Ничего не нашлось</h2><p>Попробуй другой запрос или категорию.</p></div>}
       </section>

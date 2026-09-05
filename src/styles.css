@@ -45,16 +45,19 @@ h2 { letter-spacing: -.025em; }
 .filters button.active { border-color: var(--accent); color: var(--accent-text); background: var(--accent); }
 
 .story-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px 16px; }
-.story-card { min-width: 0; text-decoration: none; }
+.story-card { display: flex; min-width: 0; flex-direction: column; }
 .cover-wrap { position: relative; }
+.cover-wrap > a { display: block; }
 .cover-card, .story-cover, .module-image, .dialog-image, .image-placeholder { display: block; width: 100%; object-fit: cover; background: linear-gradient(145deg, #594169, #261b34); }
 .cover-card, .story-cover { height: auto; }
 .cover-card { aspect-ratio: 4 / 5; border-radius: 19px; box-shadow: 0 20px 42px rgb(0 0 0 / 28%); transition: transform .2s ease, box-shadow .2s ease; }
 .story-card:hover .cover-card { transform: translateY(-4px); box-shadow: 0 25px 52px rgb(0 0 0 / 38%); }
 .cover-wrap .heart { position: absolute; right: 10px; bottom: 10px; }
-.story-card > p { margin: 13px 2px 4px; color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+.story-card-copy { display: block; flex: 1; text-decoration: none; }
+.story-card-copy > p { margin: 13px 2px 4px; color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; }
 .story-card h2 { margin: 0; font-size: 20px; line-height: 1.08; }
-.story-card > span { display: -webkit-box; overflow: hidden; margin: 8px 2px 0; color: var(--muted); font-size: 14px; line-height: 1.45; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+.story-card-copy > span { display: -webkit-box; overflow: hidden; margin: 8px 2px 0; color: var(--muted); font-size: 14px; line-height: 1.45; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+.card-play { width: 100%; margin-top: 14px; }
 .heart { display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-width: 44px; height: 44px; padding: 0 12px; border: 1px solid rgb(255 255 255 / 14%); border-radius: 999px; color: var(--text); background: rgb(22 17 31 / 74%); box-shadow: 0 7px 20px rgb(0 0 0 / 25%); backdrop-filter: blur(12px); }
 .heart span { font-size: 24px; line-height: 1; }
 .heart small { font-size: 12px; }
