@@ -152,11 +152,14 @@ function StoryDetail({ story, data, favorites, toggle }: {
   const plot = modules.get(story.plot_id);
   const characters = story.character_ids.map((id) => modules.get(id)).filter(Boolean) as StoryModule[];
   const [opened, setOpened] = useState<StoryModule | null>(null);
+  const coverOrientation = story.cover && story.cover.width > story.cover.height
+    ? "is-landscape"
+    : "is-portrait";
   return (
     <main className="detail-page">
       <a className="back-link" href="#/">← Каталог</a>
       <section className="story-hero">
-        <CatalogPicture image={story.cover} className="story-cover" priority />
+        <CatalogPicture image={story.cover} className={`story-cover ${coverOrientation}`} priority />
         <div className="story-intro">
           <p className="eyebrow">{story.categories.join(" / ") || "История"}</p>
           <h1>{story.title}</h1>
